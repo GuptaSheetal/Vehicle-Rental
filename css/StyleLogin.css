@@ -1,0 +1,64 @@
+﻿*{
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    background-image: url("Images/Log_back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 {
+    width: 47vw;
+    height: 65vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.inner {
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    right: 0;
+    background: rgba(255,252,252,0.92);
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.5vw;
+    font-family:Wide Latin;
+    color:black;
+    margin-bottom: 13%;
+    margin-top: 6%;
+}
+
+input[type=text], input[type=password] {
+    width: 80%;
+    height: 10%;
+    margin-bottom: 3%;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #4b4040;
+}
+
+input[placeholder] {
+    font-size: 1.4vw;
+    padding-left: 3%;
+    font-family: 'crete Round';
+}
+
+.btn {
+    width: 40%;
+    height: 7%;
+    margin-bottom: 7vh;
+    background-color: #12a312;
+    color: white;
+    border: 1px solid;
+}

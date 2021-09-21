@@ -1,0 +1,499 @@
+
+@charset "utf-8";
+
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: right;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: right;
+  width: 20%;
+  padding: 10px;
+  background: #68B4F1;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  /* border-right: none; */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  align:center;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+// .text{
+	
+  // text-align: center;
+  // color: white;
+// }
+.button
+{
+	float:right;
+	text-align: center;
+	font-size:20px;
+	background-color:#2196F3;
+	color:white;
+	border: none;
+	cursor: pointer;
+	padding: 20px 50px;
+}
+.banner-section {
+  background-image: url("../image/cover1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 160px 0;
+  position: relative;
+}
+.banner-section::after {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 7px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+.name{
+	position: left;
+  top: 15%;
+  left: 20%;
+  font-size:70px;
+}
+//login form
+body {font-family: Arial, Helvetica, sans-serif;}
+/* Full-width input fields */
+input[type=text], input[type=password],input[type=email],input[type=number]  {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 10%;
+  border-radius: 30%;
+}
+
+.container {
+  padding: 10px;
+}
+
+span.psw {
+  float: center;
+  padding-top: 16px;
+}
+span.signin {
+	float:center;
+	padding-top:16px;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  span.signin {
+	float:center;
+	padding-top:16px;
+}
+}
+/*========================
+	7. Listing-Page
+=============================*/
+.listing-page {
+  overflow: hidden;
+  padding: 80px 0;
+}
+.result-sorting-wrapper {
+  background: #f5f5f5 none repeat scroll 0 0;
+  border-bottom: 3px solid #e5e5e5;
+  border-left: 4px solid #cecece;
+  margin-bottom: 40px;
+  overflow: hidden;
+  padding: 10px 20px;
+}
+.sorting-count {
+  float: left;
+}
+.sorting-count p {
+  margin: 0 auto;
+  color:#222222;
+}
+.sorting-count span {
+  color: #999999;
+}
+.result-sorting-by {
+  float: right;
+}
+.result-sorting-by p {
+  display: inline-block;
+  margin: 0 auto;
+  color:#222222;
+}
+.result-sorting-by form {
+  display: inline-block;
+}
+.sorting-select {
+  margin: 0 auto;
+  padding-left: 10px;
+}
+.sorting-select .form-control {
+  background: #ffffff none repeat scroll 0 0;
+  border: 1px solid #dddddd;
+  border-radius: 50px;
+  color: #555555;
+  font-size: 12px;
+  height: auto;
+  padding: 0 30px 0 12px;
+}
+.sorting-select.select::after {
+  font-size: 12px;
+  padding: 7px 0;
+  right: 13px;
+  color: #555555;
+}
+.sorting-select .form-control option {
+  padding: 5px;
+}
+.product-listing-m {
+  margin:0 auto 40px;
+  overflow: hidden;
+}
+.product-listing-img {
+  float: left;
+  width: 45%;
+  position:relative;
+  overflow:hidden;
+}
+.product-listing-content {
+  float: left;
+  padding:20px 15px 20px 30px;
+  width: 55%;
+}
+.product-listing-content h5 {
+  margin-bottom: 2px;
+}
+.product-listing-content h5 a {
+	color:#111;
+}
+.product-listing-content ul {
+  margin: 0 auto;
+  /* overflow: hidden; */
+  padding: 0;
+}
+.product-listing-content li {
+  float: left;
+  font-size: 13px;
+  font-weight: 400;
+  list-style: outside none none;
+  margin: 0 auto;
+  width: 33%;
+}
+.product-listing-content li .fa {
+  font-size: 15px;
+  margin-right: 8px;
+}
+.car-location {
+  display: inline-block;
+  margin-left: 24px;
+  color:#919090;
+  font-size:13px;
+}
+.label_icon {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 26px;
+  padding: 0 12px;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  top: 10px;
+}
+.recent_addedcars ul {
+  margin: 0;
+  padding: 0;
+}
+.recent_addedcars ul li {
+  list-style: outside none none;
+  margin: 0 auto 15px;
+  overflow: hidden;
+}
+.recent_addedcars ul li a {
+  display: block;
+}
+.recent_post_img {
+  float: left;
+  width: 34%;
+  overflow:hidden;
+}
+.recent_post_img img {
+	transition-duration:0.3s;
+	 -moz-transition-duration:0.3s;
+	  -o-transition-duration:0.3s;
+	   -webkit-transition-duration:0.3s;
+	    -ms-transition-duration:0.3s;
+	transform:scale(1);
+	 -moz-transform:scale(1);
+	  -o-transform:scale(1);
+	   -webkit-transform:scale(1);
+	    -ms-transform:scale(1);
+	width: 100%;
+}
+.recent_post_img:hover img {
+	transform:scale(1.1);
+	 -moz-transform:scale(1.1);
+	  -o-transform:scale(1.1);
+	   -webkit-transform:scale(1.1);
+	    -ms-transform:scale(1.1);
+}
+.recent_post_title {
+  float: right;
+  padding: 4px 10px;
+  width: 66%;
+}
+.recent_post_title a {
+  color: #111;
+  font-weight: 700;
+  line-height: 22px;
+}
+.widget_price {
+	font-size:13px;
+	margin:0px;
+}
+
+.sell_car_quote {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("../images/img_390x390.jpg") !important;
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 25px !important;
+}
+.sell_car_quote .btn {
+	margin-bottom:15px;	
+}
+
+
+
+/*===========================
+	8. Listing-grid-Style
+==================================*/
+.grid_listing .product-listing-m {
+  margin: 0 -15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin:0 auto 40px;
+}
+.grid_listing .product-listing-img, .grid_listing .product-listing-content {
+	float:none;
+	width:100%;
+}
+.grid_listing .product-listing-img img {
+	width:100%;
+}
+.grid_listing .product-listing-content {
+  padding: 20px 20px 0;
+}
+.grid_listing .product-listing-content h5 {
+	line-height:26px;
+	margin:0 auto 20px
+}
+.grid_listing .product-listing-content .list-price {
+	font-size:18px;
+	color:#555;
+	font-weight:900;
+	display:inline-block;
+	vertical-align:middle;	
+	margin:0 auto;
+}
+.grid_listing .product-listing-content .car-location {
+  float: right;
+}
+.grid_listing .product-listing-content ul.features_list {
+  background: #fff none repeat scroll 0 0;
+  border-top: 1px solid #e1e0e0;
+  clear:both;
+  margin: 16px -20px 0;
+  padding: 15px 20px;
+}
+.grid_listing .product-listing-content ul.features_list li {
+  color: #8d8d8d;
+  margin-bottom: 3px;
+  width: 50%;
+}
+.grid_listing:nth-child(3n+1) {
+  clear: left;
+}
+.grid_listing:nth-child(3n) {
+  clear: right;
+}
+/*--------------------------
+	15.4. Side-Bar-Widgets
+-------------------------------------*/
+.sidebar_widget {
+  border: 2px solid #e6e6e6;
+  margin: 0 auto 40px;
+  padding: 20px 16px 30px;
+  position: relative;
+}
+.widget_heading {
+  margin-bottom:26px;
+}
+.widget_heading i {
+	margin:0 5px 0 0;	
+}
+.search_btn {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 0 none;
+  border-radius: 0;
+  font-size: 16px;
+  padding: 5px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+   -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+     -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+}
+.blog_search {
+  position: relative;
+  margin-bottom:20px;
+}
+.blog_search input {
+	padding-right:50px;	
+}
+
